@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+.top {
+    background-color: rgb(230, 230, 230);
+    border-bottom: 0.5px solid;
+    border-color: rgb(184, 184, 184);
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0;
+    color: rgb(102, 102, 102);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1em;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    flex-wrap: wrap; 
+    max-width: 690px;
+    margin: auto;
+}
+
+.note {
+    margin: 10px;
+    box-shadow: 1px 1px 2px;
+    height: 275px;
+    background-color: lightyellow;
+    border-radius: 5px;
+}
+
+.note div {
+    text-align: right;
+    padding-right: 3px;
+    background-color: yellow;
+    height: 25px;
+    border-radius: 5px 5px 0 0;
+}
+
+.note textarea {
+    width: 200px;
+    height: 235px;
+    resize: none;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    overflow: auto;
+    outline: none;
+    padding: 5px;
+}
+
+#addButton {
+    border: 0px;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    box-shadow: 1px 1px 2px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.color-picker {
+    text-align: center;
+}
+
+.color-button {
+    border: 0px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px;
+}
+
+#yellow-button {
+    background-color: yellow;
+}
+
+#blue-button {
+    background-color: blue;
+}
+
+#red-button {
+    background-color: red;
+}
+
+#green-button {
+    background-color: green;
+}
+
+#pink-button {
+    background-color: pink;
+}
+
+.radio-clear {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.radio-group {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.radio-group:checked {
+    box-shadow: 0px 0px 2px 3px gray,
+                0px 0px 2px 6px rgb(180, 180, 180),
+                0px 0px 2px 9px lightgray;
+}
+
+.remove-button {
+    cursor: pointer;
+}
+
+.js {
+    display: none;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: 0.5s;
+}
